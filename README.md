@@ -1,0 +1,5 @@
+# Android Based Encrypted SMS System Using ECDSA And AES Algorithms
+
+### Introduction
+
+Encryption is of prime importance when confidential data is transmitted over the network. Varied encryption algorithms like AES, DES, RC4 and others are available for the same. The most widely accepted algorithm is AES algorithm. We will develop an application on Android platform which allows the user to encrypt the messages before it is transmitted over the network. We will use the Advanced Encryption Standards algorithm and ECDSA for encryption and decryption of the data. This application can run on any device which works on Android platform. This application provides a secure, fast, and strong encryption of the data. There is a huge amount of confusion and diffusion of the data during encryption which makes it very difficult for an attacker to interpret the encryption pattern and the plain text form of the encrypted data. The messages encrypted by the developed application are also resistant to Brute-Force and pattern attacks.

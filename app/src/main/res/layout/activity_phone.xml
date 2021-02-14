@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:src="@drawable/img_number_verification" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send Text Message"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+            android:textColor="@color/grey_80"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_medium"
+            android:text="Please enter a mobile number to send an encrypted message. Carrier rates may apply"
+            android:gravity="center"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+            android:textColor="@color/grey_60" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spacing_large"
+            android:layout_marginTop="@dimen/spacing_xlarge"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="+234"
+                android:id="@+id/phoneno1"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+                android:textColor="@color/grey_80" />
+
+            <View
+                android:layout_width="@dimen/spacing_medium"
+                android:layout_height="0dp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone Number"
+                android:id="@+id/phoneno2"
+                android:inputType="phone"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text=""
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textColor="@color/grey_90"
+                android:textStyle="bold" >
+
+                <requestFocus/>
+
+            </androidx.appcompat.widget.AppCompatEditText>
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_rounded_red"
+            android:text="SEND SMS"
+            android:id="@+id/smsBtn"
+            android:textColor="@android:color/white" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/goBackBtn"
+            android:text="NO, OTHER TIME"
+            android:textColor="@color/grey_40" />
+
+    </LinearLayout>
+
+</RelativeLayout>
